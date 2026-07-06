@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未麻の部屋-メイル</title>
+    <link rel="stylesheet" href="css/page456.css">
+    <script src="js/page6.js"></script>
+    <style>
+        /* 原左侧正文文本居中 */
+        .left {
+            text-align: center;
+        }
+
+        #page6 {
+            background-color: #ccb1b3;
+        }
+
+        /* 设置表单样式 */
+        form {
+            margin: auto;
+            display: block;
+            padding: 20px;
+            background-color: #ae878b;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ae878b;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 70%;
+        }
+
+        /* 设置按钮样式 */
+        .button {
+            margin: auto;
+            width: 20%;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #c9afb2;
+            background-color: #864b51;
+            border-radius: 10px;
+        }
+
+        /* 设置消息输入框大小 */
+        #message {
+            width: 100%;
+            height: 100px;
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        /* 设置文本标签样式 */
+        label {
+            font-weight: bold;
+        }
+
+        /* 设置输入框背景颜色 */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            background-color: #c9afb2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>&emsp;メイル</h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="page0_mimanoheya.html" id="page0">ホームページ</a></li>
+                    <li><a href="page1_hajimete.html" id="page1">はじめまして</a></li>
+                    <li><a href="page2_nikki.html" id="page2">未麻の日記</a></li>
+                    <li><a href="page3_osusume.html" id="page3">未麻のおすすめ</a></li>
+                    <li><a href="page4_fotogyararii.html" id="page4">フォトギャラリー</a></li>
+                    <li><a href="page5_itocoto.html" id="page5">今日の一言</a></li>
+                    <li><a href="page6_meiru.html" id="page6">メイル</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h3>未麻へのメッセージ</h3>
+                <p>いつも「未麻の部屋」を応援してくれてありがとうございます！(´∀｀)ノ</p>
+                <p>みんなからのメッセージ、とっても嬉しく読んでいます。</p>
+                <p>質問、感想、応援の言葉、何でもいいので、ぜひ未麻に送ってくださいね。</p>
+                
+                <!-- 发送邮箱表单 -->
+                <form id="mailform" onsubmit="sendMessage()">
+                    <label>名前</label><br>
+                    <input type="text" id="name" name="name" required onkeydown="checkMima(event)"><br>
+                    <label>メール</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label>メッセージ</label><br>
+                    <textarea id="message" name="message" placeholder="メッセージを入力してください" rows="4" cols="50" required></textarea><br>
+                    <label>このサイトでもっと知りたいこと：</label><br>
+                    <input type="checkbox">日常生活
+                    <input type="checkbox">作品に関連する情報<br>
+                    <input type="checkbox">女優の仕事
+                    <input type="checkbox">歌手の仕事<br>
+                    <input class="button" type="submit" value="送信">
+                    <input class="button" type="button" value="リセット" onclick="resetForm()">
+                </form>
+                <p>掲示板、ただいま工事中♪ </p>
+                <p>楽しみに待っててね！</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>未麻の部屋 - メイル</p>
+        </div>
+    </div>
+</body>
+
+</html>

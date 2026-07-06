@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未麻の部屋-フォトギャラリー</title>
+    <link rel="stylesheet" href="css/page456.css">
+    <style>
+        /* 为当前页面对应的菜单栏子项添加样式，表示当前已选中 */
+        #page4 {
+            background-color: #ccb1b3;
+        }
+
+        /* 根据当前页面调整图片属性 */
+        img {
+            height: 500px;
+            border: 2px #CC0066 ridge;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+        
+        /* 设置滚动框边距 */
+        marquee {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>&emsp;フォトギャラリー</h1>
+            <div class="menu">
+                <ul>
+                    <li><a href="page0_mimanoheya.html" id="page0">ホームページ</a></li>
+                    <li><a href="page1_hajimete.html" id="page1">はじめまして</a></li>
+                    <li><a href="page2_nikki.html" id="page2">未麻の日記</a></li>
+                    <li><a href="page3_osusume.html" id="page3">未麻のおすすめ</a></li>
+                    <li><a href="page4_fotogyararii.html" id="page4">フォトギャラリー</a></li>
+                    <li><a href="page5_itocoto.html" id="page5">今日の一言</a></li>
+                    <li><a href="page6_meiru.html" id="page6">メイル</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h3 align="center">フォトギャラリー</h3>
+                <!-- 滚动图片，鼠标悬停停止滚动 -->
+                <marquee behavior="solid" onmouseover="this.stop()" onmouseout="this.start()">
+                    <a href="images/page_4/poster1.webp" title="Poster 1">
+                        <img src="images/page_4/poster1.webp"></a>
+                    <a href="images/page_4/poster2.jpg" title="Poster 2">
+                        <img src="images/page_4/poster2.jpg"></a>
+                    <a href="images/page_4/poster3.jpg" title="Poster 3">
+                        <img src="images/page_4/poster3.jpg"></a>
+                    <a href="images/page_4/poster4.jpg" title="Poster 4">
+                        <img src="images/page_4/poster4.jpg"></a>
+                    <a href="images/page_4/poster5.jpg" title="Poster 5">
+                        <img src="images/page_4/poster5.jpg"></a>
+                    <a href="images/page_4/poster6.webp" title="Poster 6">
+                        <img src="images/page_4/poster6.webp"></a>
+                </marquee>
+            </div>
+        </div>
+        <div class="footer">
+            <p>未麻の部屋 - フォトギャラリー</p>
+        </div>
+    </div>
+</body>
+
+</html>

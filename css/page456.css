@@ -1,0 +1,94 @@
+/* 设置body基本样式 */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/page_1/bgimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* 设置页面主容器container的样式*/
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 8px solid #703339;
+    background-color: blue;
+    font-family: "MS Pゴシック", monospace;
+    font-size: 16px;
+}
+
+/* 设置头部header的样式 */
+.header {
+    background-color: #864b51;
+    font-weight: bold;
+    padding: 1px;
+    color: #e4d7d8;
+}
+
+/* 设置内容content的样式，包括左侧正文内容left和右侧侧边栏right */
+.content {
+    padding: 1px;
+    background-color: #ae878b;
+    overflow: hidden;
+}
+
+.left {
+    width: 90%;
+    padding: 1px;
+    background-color: #c9afb2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 设置侧边栏ul的样式 */
+.right ul {
+    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.right ul li a {
+    color: #442129;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.right ul li a:hover {
+    background-color: #c9afb2;
+}
+
+/* 设置底部footer的样式 */
+.footer {
+    background-color: #864b51;
+    padding: 1px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 设置菜单栏menu的样式*/
+.menu {
+    background-color: #ae878b;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li a {
+    color: #442129;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    font-size: 80%;
+}
+
+.menu ul li a:hover {
+    background-color: #ccb1b3;
+}
+
